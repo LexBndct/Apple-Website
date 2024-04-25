@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    z-index: 10000; /* Ensure the navbar stays on top */
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li {
+    transition: .2s;
+}
+
+header ul li a {
+    color: black;
+    padding: 15px;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+header ul li:hover {
+    transform: scale(1.06);
+    transition: .3s;
+    color: black;
+}
+
+
+/* Hero */
+.hero-image {
+    background-color: black;
+    width: 100%;
+    background-image: url(hero.jpg);
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh;
+}
+
+.hero-text {
+    height: 100vh;
+    font-size: 30px;
+    color: white;
+    position: relative; /* Position the container relatively */
+}
+
+.hero-text h1 {
+    position: absolute;
+    top: 20%; /* Initially center vertically */
+    left: 50%; /* Initially center horizontally */
+    transform: translate(-50%, -50%); /* Center the h1 both horizontally and vertically */
+    color: rgb(245, 227, 194);
+}
+
+.hero-text button{
+    font-size: 15px;
+    position: absolute;
+    top: 75%;
+    left: 47%;
+    height: 40px;
+    width: 100px;
+    border-radius: 18px;
+    border: none;
+    background-color: black;
+    color: rgb(245, 227, 194);
+    border: 2px solid rgb(245, 227, 194);
+    transition: .5s;
+    cursor: pointer;
+    
+}
+
+.hero-text button:hover{
+    transition: .5s;
+    background-color: white;
+    color: black;
+}
+
+
+/* Hero 2 */
+
+.hero2{
+    width: 100%;
+    height: 90vh;
+}
+
+.hero2-button{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.hero2-button button{
+    width: 10%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.hero2-button button:hover{
+    border: 2px solid black;
+
+}
+
+.hero2 h1{
+    position: absolute;
+    top: 115%; /* Initially center vertically */
+    left: 17%; /* Initially center horizontally */
+    transform: translate(-50%, -50%); /* Center the h1 both horizontally and vertically */
+    font-size: 55px;
+    display: flex;
+}
+
+.hero2-wrapper{
+    position: relative;
+    top: 26%;
+    left: 0%;
+    width: 50%;
+    height: 60vh;
+    background-color: aquamarine;
+    border-radius: 0px;
+}
+
+.hero2-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero2-title{
+    position: absolute;
+    width: 48;
+    left: 50%;
+    top: 120%;
+}
+
+.hero2-text{
+    font-size: 1.3vw;
+    position: absolute;
+    width: 48%;
+    left: 51%;
+    top: 125%;
+}
+
+.hero3 {
+    background-color: black;
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+}
+
+.hero3 img{
+    height: auto;
+    width: 15%;
+    height: 15%;
+}
+
+.hero3-text-title{
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.gaming-test{
+    text-align: center;
+    color: white;
+    width: 80%;
+    height: 40%;
+}
+
+.gaming-test img{
+    width: 100%;
+    height: 100%;
+}
+
+.gaming-test p{
+    position: relative;
+    top: -11%;
+    font-size: 18px;
+    color: #888;
+}
+
+.text-and-button{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.tnb-wrapper{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+}
+
+.tnb-wrapper span{
+    color: white;
+}
+
+.float-left{
+    width: 50%;
+    height: 65vh;
+    text-align: left;
+    padding: 10px 10px;
+    padding-right: 10%;
+}
+
+.float-left p{
+    font-size: 1.3vw;
+    padding: 10px;
+    font-weight: bold;
+    color: #999;
+}
+
+.float-right{
+    width: 50%;
+    height: 65vh;
+    text-align: left;
+    padding-left: 10%;
+    color: white;
+}
+
+.float-right h1{
+    font-weight: bold;
+    font-size: 3vw;
+    width:60%;
+}
+
+.float-right .cores{
+    font-weight: bold;
+    font-size: 1.3vw;
+    color: #888;
+    padding-bottom: 25% ;
+}
+
+.float-right button{
+    position: relative;
+    width: 80%;
+    height: 60px;
+    border-radius: 70px;
+    font-size: 22px;
+    background-color: #000;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #333;
+    transition: .3s;
+}
+
+
+.float-right button:hover{
+    cursor: pointer;
+    background-color: #333;
+    transition: .3s;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 476px) {
+    header{
+        font-size: 10px;
+
+    }
+    
+    .hero-image{
+        background-size: 400px;
+    }
+
+    .hero-text h1{
+        font-size:25px;
+    }
+
+    .hero-text button{
+        font-size: 20px;
+        left: 38%;
+        top: 80%;
+    }
+
+    .hero2 h1{
+        font-size: 28px;
+        left: 30%;
+    }
+    .hero2-wrapper{
+        width: 100%;
+        height: 30%;
+    }
+
+    .hero2-text{
+        width: 70%;
+        font-size: 1.66vw;
+        left: 16%;
+        top: 155%;
+    }
+
+    .hero2 button{
+        font-size: 10px;
+        top: 50%;
+        left: 31%;
+        width: 70px;
+        height: 30px;
+    }
+
+    .hero3 img{
+        width: 40%;
+        height: 200px;
+    }
+
+    .hero3 h1{
+        font-size: 40px;
+    }
+    .gaming-test img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .gaming-test{
+        height: 300px;
+    }
+
+    .gaming-test p {
+        top: -35px;
+        font-size: 17px;
+    }
+
+    .float-left p{
+        font-size: 2.5vw;
+    }
+
+    .float-right h1{
+        font-size: 30px;
+    }
+
+    .float-right button{
+        font-size: 12px;
+    }
+
+    .hero2-button{
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    
+    .hero2-button button{
+        width: 30%;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+    }
+}
+

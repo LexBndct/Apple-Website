@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    z-index: 10000; /* Ensure the navbar stays on top */
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li {
+    transition: .2s;
+}
+
+header ul li a {
+    color: black;
+    padding: 20px;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+header ul li:hover {
+    transform: scale(1.06);
+    transition: .3s;
+    color: black;
+}
+
+
+/* Hero Section */
+
+.hero {
+    color: white;
+    padding: 220px 0;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.hero-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-wrapper img{
+    width: 80%;
+}
+
+.hero-wrapper .phone-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-wrapper h1{
+    padding: 15px;
+    color: #333;
+    font-size: 26px;
+}
+
+.hero-wrapper p{
+    color: #333;
+}
+
+.phone1 img{
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.phone2 img{
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.phone3 img{
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.hero-wrapper .price-box{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    justify-content: space-between;
+}
+
+.hero-wrapper .price-box button{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #1f94dc;
+    font-size: 14px;
+    color: white;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.hero-wrapper .price-box button:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+
+/* Hero 2 */
+
+
+.hero2 {
+    color: white;
+    padding: 220px 0;
+    text-align: center;
+    width: 100%;
+    height: 85vh;
+}
+
+.hero-wrapper2{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-wrapper2 img{
+    width: 80%;
+}
+
+.hero-wrapper2 .phone-list2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-wrapper2 h1{
+    padding: 15px;
+    color: #333;
+    font-size: 26px;
+}
+
+.hero-wrapper2 p{
+    color: #333;
+}
+
+.phone1a img{
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.phone2a img{
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.phone3a img{
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.hero-wrapper .price-box{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    justify-content: space-between;
+}
+
+.hero-wrapper .price-box button{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #1f94dc;
+    font-size: 14px;
+    color: white;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.hero-wrapper .price-box button:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+.hero-wrapper2 .price-box{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    justify-content: space-between;
+}
+
+.hero-wrapper2 .price-box button{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #1f94dc;
+    font-size: 14px;
+    color: white;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.hero-wrapper2 .price-box button:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+/* Footer Section */
+
+footer {
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 540px) {
+
+    header {
+        font-size: 10px;
+        position: fixed;
+        z-index: 10000; /* Ensure the navbar stays on top */
+        width: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    header ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .phone1a{
+        margin-top: 50px;
+    }
+    
+    header ul li {
+        transition: .2s;
+    }
+    
+    header ul li a {
+        color: black;
+        padding: 15px;
+    }
+    
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    header ul li:hover {
+        transform: scale(1.06);
+        transition: .3s;
+        color: black;
+    }
+    
+
+    .hero2 {
+        color: white;
+        padding: 220px 0;
+        text-align: center;
+        width: 100%;
+        height: 410vh;
+    }
+    
+    .hero-wrapper .phone-list{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .hero-wrapper2 .phone-list2{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 230%;
+    }
+
+    .hero-wrapper .price-box{
+        padding-bottom: 30px;
+    }
+    .hero-wrapper2 .price-box{
+        padding-bottom: 30px;
+    }
+
+    .hero-wrapper .right{
+        background-color: #1f94dc;
+    }
+
+    /* Footer */
+    
+    footer{
+        margin-top: 60px;
+    }
+
+  }
+
+
+

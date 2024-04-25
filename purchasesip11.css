@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    z-index: 10000; /* Ensure the navbar stays on top */
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li {
+    transition: .2s;
+}
+
+header ul li a {
+    color: black;
+    padding: 15px;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+header ul li:hover {
+    transform: scale(1.06);
+    transition: .3s;
+    color: black;
+}
+
+
+/* MAIN */
+
+main{
+    width: 100%;
+    height: 100vh;
+    padding-top: 120px;
+}
+
+.wrapper .left img{
+    width: 100%;
+}
+
+.wrapper{
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wrapper .left{
+    padding: 20px;
+    width: 25%;
+    height: 70vh;
+}
+.wrapper .center{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c8c8c8;
+    border-radius: 20px;
+    padding: 20px;
+    width: 45%;
+    height: 100vh;
+}
+
+.wrapper .center .color{
+    padding-top: 60px;
+}
+.wrapper .center .color button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 2px;
+    border: none;
+}
+
+.wrapper .center .color .red{
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    transition: .5s;
+}
+.wrapper .center .color .red:hover{
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    transition: .5s;
+}
+.wrapper .center .color .red.clicked {
+    color: white;
+    background-color: red; /* Change to the desired background color */
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+.wrapper .center .color .yellow{
+    color: rgba(223, 241, 103, 0.94);
+    background-color: white;
+    border: 1px solid rgba(223, 241, 103, 0.94);
+    transition: .5s;
+}
+.wrapper .center .color .yellow:hover{
+    color: white;
+    background-color: rgba(223, 241, 103, 0.94);
+    border: 1px solid rgba(223, 241, 103, 0.94);
+    transition: .5s;
+}
+.wrapper .center .color .yellow.clicked {
+    color: white;
+    background-color: rgba(223, 241, 103, 0.94); /* Change to the desired background color */
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+/* Blue */
+.wrapper .center .color .blue{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: .5s;
+}
+.wrapper .center .color .blue:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    transition: .5s;
+}
+.wrapper .center .color .blue.clicked {
+    color: white;
+    background-color: black; /* Change to the desired background color */
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+
+/* Starlight */
+.wrapper .center .color .starlight{
+    color: rgb(199, 199, 221);
+    background-color: white;
+    border: 1px solid rgb(199, 199, 221);
+    transition: .5s;
+}
+.wrapper .center .color .starlight:hover{
+    color: white;
+    background-color: rgb(199, 199, 221);
+    border: 1px solid rgb(199, 199, 221);
+    transition: .5s;
+}
+.wrapper .center .color .starlight.clicked {
+    color: white;
+    background-color: rgb(199, 199, 221); /* Change to the desired background color */
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+/* Midnight */
+.wrapper .center .color .midnight{
+    color: rgb(30, 30, 32);
+    background-color: white;
+    border: 1px solid rgb(30, 30, 32);
+    transition: .5s;
+}
+.wrapper .center .color .midnight:hover{
+    color: white;
+    background-color: rgb(42, 42, 44);
+    border: 1px solid rgb(30, 30, 32);
+    transition: .5s;
+}
+.wrapper .center .color .midnight.clicked {
+    color: white;
+    background-color: rgb(30, 30, 32);
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.wrapper .center .capacity{
+    padding-top: 60px;
+}
+
+.wrapper .center .capacity button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 2px;
+    border: none;
+    transition: .5s;
+}
+.wrapper .center .capacity button:hover{
+    border: 1px solid black;
+}
+
+.wrapper .center .capacity .gb128.clickeds{
+    border: 1px solid black;
+    transform: scale(1.05);    
+    transition: .5s;
+    background-color: #888;
+}
+.wrapper .center .capacity .gb256.clickeds{
+    border: 1px solid black;
+    transform: scale(1.05);    
+    transition: .5s;
+    background-color: #888;
+}
+.wrapper .center .capacity .gb512.clickeds{
+    border: 1px solid black;
+    transform: scale(1.05);    
+    transition: .5s;
+    background-color: #888;
+}
+
+.wrapper .center .desc-item{
+    font-size: 1.09vw;
+}
+
+
+.wrapper .right{
+    padding: 20px;
+    width: 25%;
+    height: 40vh;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+.right .price-tag{
+    width: 100%;
+    height: 35%;
+    text-align: center;
+}
+
+.right .price-tag h1{
+    text-align: center;
+    color: #777;
+}
+.right .price-tag p{
+    text-align: center;
+    color: red;
+    text-decoration: line-through;
+}
+
+.right .addtocart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .addtocart button{
+    width: 100%;
+    margin: 5px;
+    height: 40px;
+    background-color: #222;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.right .addtocart button:hover{
+    background-color: green;
+    transition: .5s;
+}
+
+
+
+@media only screen and (max-width: 1090px) {
+    .right .price-tag h1{
+        text-align: center;
+        color: #777;
+        font-size: 20px;
+    }
+
+    .wrapper .left img{
+        width: 120%;
+    }
+
+    .right .addtocart button{
+        width: 100%;
+        height: 35px;
+    }
+}
+
+
+@media only screen and (max-width: 870px) {
+    .right .price-tag h1{
+        text-align: center;
+        color: #777;
+        font-size: 15px;
+    }
+    .right .price-tag p{
+        font-size: 12px;
+    }
+
+    .wrapper .left img{
+        width: 120%;
+    }
+
+    .right .addtocart button{
+        width: 100%;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    header{
+        font-size: 10px;
+    }
+
+    html{
+        font-size: 75%;
+    }
+
+    header img{
+        width: 10%;
+        height: 10%;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right .price-tag h1{
+        text-align: center;
+        color: #777;
+        font-size: 15px;
+    }
+    
+    .right .price-tag p{
+        font-size: 12px;
+    }
+
+    .wrapper .left{
+        padding-top: 0px;
+        width: 80%;
+        height: 30%;
+    }
+
+    .wrapper .center{
+        width: 100%;
+    }
+
+    .wrapper .center .desc-item{
+        padding-top: 10px;
+        font-size: 2.16vw;
+    }
+
+    .wrapper .left img{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .right .addtocart button{
+        width: 100%;
+        height: 35px;
+        font-size: 16px;
+    }
+
+
+    .wrapper .right{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
